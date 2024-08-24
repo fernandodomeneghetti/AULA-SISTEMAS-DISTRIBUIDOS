@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta e Reserva de Produto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Consulta e Reserva de Produto</h1>
+
+        <div>
+            <label for="productSearch">Buscar Produto:</label>
+            <input type="text" id="productSearch" placeholder="Digite o nome do produto...">
+            <button onclick="searchProduct()">Buscar</button>
+        </div>
+
+        <div id="productResult">
+            <!-- Resultados da busca serão exibidos aqui -->
+        </div>
+
+        <div id="reservationSection" style="display:none;">
+            <h2>Reservar Produto</h2>
+            <p id="selectedProduct"></p>
+            <button onclick="reserveProduct()">Reservar</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
